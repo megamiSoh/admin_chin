@@ -94,15 +94,27 @@
     </maAppHeader>
 
     <maSidebar>
-      <maSidebarHeader appName="Modular Admin"></maSidebarHeader>
+      <maSidebarHeader appName="Admin"></maSidebarHeader>
       <maSidebarNav>
 
-        <maSidebarNavItem
-            icon='fa-home'
-            link='#'
-            itemText='Dashboard'
+        <maSidebarNavDropdown
+            icon="fa-th-large"
+            itemText="뱃지관리"
           >
-          </maSidebarNavItem>
+            <maSidebarNaveDropItem
+            icon="fa-th-large"
+            itemText="뱃지리스트"
+          >
+            <maSidebarNavItem
+              itemText='신규등록'
+            ></maSidebarNavItem>
+            <maSidebarNavItem
+              link='#itemslist'
+              itemText='상세 페이지'
+            ></maSidebarNavItem>
+          </maSidebarNaveDropItem
+>
+        </maSidebarNavDropdown>
           <maSidebarNavDropdown
             icon="fa-th-large"
             itemText="Items Manager"
@@ -118,12 +130,31 @@
             ></maSidebarNavItem>
           </maSidebarNavDropdown>
           <maSidebarNavItem
+            icon='fa-th-large'
+            link='#'
+            itemText='운동영상관리'
+          ></maSidebarNavItem>
+           <maSidebarNavItem
+            icon='fa-th-large'
+            link='#'
+            itemText='컨텐츠관리'
+          ></maSidebarNavItem>
+           <maSidebarNavItem
+            icon='fa-th-large'
+            link='#'
+            itemText='CS 문의하기'
+          ></maSidebarNavItem>
+           <maSidebarNavItem
             icon='fa-home'
             link='#'
-            itemText='Testing'
+            itemText='관리자정보'
           ></maSidebarNavItem>
-
-      </maSidebarNav>
+           <maSidebarNavItem
+            icon='fa-home'
+            link='#'
+            itemText='회원정보'
+          ></maSidebarNavItem>
+      </maSidebarNav> 
       <maSidebarFooter></maSidebarFooter>
     </maSidebar>
 
@@ -134,10 +165,14 @@
       </maFooterButtons>
       <maFooterAbout>
         <maFooterAboutItem>
-          Another thing in the footer
+          © Copyright Final Company, Inc. All Rights Reserved. 
+대표이사 최승병 │ 사업자번호 119-86-86816 
+사업장소재지 서울특별시 종로구 종로 19, 르메이에르 스포츠센터 B3층 연구소  
         </maFooterAboutItem>
         <maFooterAboutItem>
-          Created with <i class="fa fa-heart"></i> by <a href="https://lancaster.ac.uk/library">Lancaster University Library</a>
+         대표전화 02-722-9502~9503 
+ 이메일 info@finalcompany.co.kr
+
         </maFooterAboutItem>
       </maFooterAbout>
     </maFooter>
@@ -161,6 +196,7 @@ import maSidebar from './components/sidebar/Sidebar'
 import maSidebarHeader from './components/sidebar/SidebarHeader'
 import maSidebarNav from './components/sidebar/nav/SidebarNav'
 import maSidebarNavDropdown from './components/sidebar/nav/SidebarNavDropdown'
+import maSidebarNaveDropItem from './components/sidebar/nav/sidebarNaveDropItem'
 import maSidebarNavItem from './components/sidebar/nav/SidebarNavItem'
 import maSidebarFooter from './components/sidebar/SidebarFooter'
 import maFooter from './components/footer/AppFooter'
@@ -186,6 +222,7 @@ export default {
     maSidebarHeader,
     maSidebarNav,
     maSidebarNavDropdown,
+    maSidebarNaveDropItem,
     maSidebarNavItem,
     maSidebarFooter,
     maFooter,

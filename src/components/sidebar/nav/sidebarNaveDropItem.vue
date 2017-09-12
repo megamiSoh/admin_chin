@@ -43,7 +43,7 @@
       },
       childActive () {
         this.isActive = false
-        this.show = true
+        this.show = false
       }
     },
     created: function () {

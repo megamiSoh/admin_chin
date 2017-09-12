@@ -1,5 +1,5 @@
 <template>
-  <li :class="{active: active}">
+  <li :v-bind:class="{active: isActive}">
     <a v-bind:href="link" v-html="linkContent">
     </a>
     <slot></slot>
